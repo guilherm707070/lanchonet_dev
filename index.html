@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="src/img/thumbnail_13435420220330624488cabb22b.webp"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&family=League+Gothic&family=Outfit&family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      
+    />
+
+    <meta praperty="og:type" content="website" />
+    <meta praperty="og:title" content="DEV BURGER JGJS" />
+    <meta
+      praperty="og:image"
+      content="https://guilherm707070.github.io/dev-lachonet/src/img/thumbnail_13435420220330624488cabb22b.webp"
+    />
+    <meta praperty="og:description" content="O menhor que ta tendo" />
+    <meta praperty="og:site_name" content="DEV_BURGER_JGJS" />
+
+    <link rel="stylesheet" href="src/css/output.css"  />
+    <title>DEV_Hamburgeria JGJS</title>
+  </head>
+  <body>
+    <header class="w-full h-[420px] bg-zinc-900  bg-cover bg-center ">
+      <div class="w-full h-full flex flex-col justify-center items-center">
+        <img
+          src="src/img/thumbnail_13435420220330624488cabb22b.webp"
+          alt="hamb-1"
+          class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-250"
+        />
+        <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
+          DEV-Hanburgeria JGJS
+        </h1>
+        <span class="text-white font-medium"
+          >Rua DvA 10 centro , Ao lado do campo - BA</span
+        >
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-6" id="date-span">
+          <span class="text-white font-medium">Seg á Dom 18:00 as 22:00</span>
+        </div>
+      </div>
+    </header>
+
+    <h2 class="text-2xl md:text-5xl font-bold text-center mt-9 mb-6">
+      Conheça nosso menu
+    </h2>
+
+    <div id="menu">
+      <main
+        class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl"
+      >
+        <!-- incil -->
+        <div class="flex gap-3">
+          <img
+            src="src/img/hamb-1.png"
+            alt="hamb-1 smash"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class=" ">
+            <p class="font-bold">Smash Salada</p>
+            <p class="text-sm">
+              Hambúrguer smash Blend duplo especial de carne 100% bovina, queijo
+              derretido, alface fresco, tomate, cebola e molho especial no pão
+              brioche selado.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">$ 10.90</p>
+              <button
+                class="bg-green-600 px-5 rounded-md add-to-card-btn"
+                data-name="Smash_Salada"
+                data-pricie="10.90"
+              >
+                <i class="fa fa-card-plus text-sm text-white">🛒</i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- fim -->
+        <div class="flex gap-3">
+          <img
+            src="src/img/hamb-2.png"
+            alt="hamb-2 Hamburguer-duplo"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class=" ">
+            <p class="font-bold">Smash Tropical</p>
+            <p class="text-sm">
+              Hambúrguer smash Blend duplo especial de carne 100%
+              bovinasuculento, banana grelhada, cebola caramelizada, queijo
+              derretido e molho especial no pão brioche selado.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">$ 16.90</p>
+              <button
+                class="bg-green-600 px-5 rounded-md add-to-card-btn"
+                data-name="Smash_Tropical"
+                data-pricie="16.90"
+              >
+                <i class="fa fa-card-plus text-sm text-white">🛒</i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-3">
+          <img
+            src="src/img/hamb-3.png"
+            alt="hamb-1Hamburger-salad"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class=" ">
+            <p class="font-bold">Especial Prime</p>
+            <p class="text-sm">
+              Hambúrguer artesanal duplo, queijo cheddar cremoso, bacon
+              crocante, cebola crispy, picles, molho especial e pão brioche
+              selado na manteiga
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">$ 14.00</p>
+              <button
+                class="bg-green-600 px-5 rounded-md add-to-card-btn"
+                data-name="Especial_Prime"
+                data-pricie="14.00"
+              >
+                <i class="fa fa-card-plus text-sm text-white">🛒</i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-3">
+          <img
+            src="src/img/hamb-5.png"
+            alt="hamb-1Hamburger-salad"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class=" ">
+            <p class="font-bold">Burger da Casa</p>
+            <p class="text-sm">
+              Blend especial de carne 100% bovina, queijo derretido, bacon
+              crocante, cebola caramelizada, alface, tomate e molho exclusivo da
+              casa no pão brioche selado.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">$ 12.00</p>
+              <button
+                class="bg-green-600 px-5 rounded-md add-to-card-btn"
+                data-name="Burger_da_Casa"
+                data-pricie="12.00"
+              >
+                <i class="fa fa-card-plus text-sm text-white">🛒</i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-3">
+          <img
+            src="src/img/hamb-6.png"
+            alt="hamb-1Hamburger-salad"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class=" ">
+            <p class="font-bold">Hamburger salad</p>
+            <p class="text-sm">
+              Carne 100% bovina prensada na chapa para máxima suculência, pão
+              brioche selado,alface fresca, tomate, cebola ,queijo derretido e
+              molho especial.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">$ 13.90</p>
+              <button
+                class="bg-green-600 px-5 rounded-md add-to-card-btn"
+                data-name="Hamburger_salad"
+                data-pricie="13.90"
+              >
+                <i class="fa fa-card-plus text-sm text-white">🛒</i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-3">
+          <img
+            src="src/img/hamb-4.png"
+            alt="hamb-1 smash"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class=" ">
+            <p class="font-bold">Chicken Crispy</p>
+            <p class="text-sm">
+              Frango empanado crocante, alface fresca, tomate, queijo derretido
+              e molho especial no pão brioche selado
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">$ 15.00</p>
+              <button
+                class="bg-green-600 px-5 rounded-md add-to-card-btn"
+                data-name="Chicken_Crispy"
+                data-pricie="15.00"
+              >
+                <i class="fa fa-card-plus text-sm text-white">🛒</i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="mx auto max-w-7-l px-5 my-2">
+        <h2 class="font-bold text-3xl">Bebidas</h2>
+      </div>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl"
+        id="menu"
+      >
+        <div class="flex gap-3 w-full">
+          <img
+            src="src/img/refri-2.png"
+            alt="Guarana lata"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Guarana lata</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">$6.00</p>
+              <button
+                class="bg-green-600 px-5 rounded-md add-to-card-btn"
+                data-name="Guarana_lata"
+                data-pricie="6.00"
+              >
+                <i class="fa fa-card-plus text-sm text-white">🛒</i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-3 w-full">
+          <img
+            src="src/img/refri-1.png"
+            alt="Guarana lata"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Coca lata</p >
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">$6.00</p>
+              <button
+                class="bg-green-600 px-5 rounded-md add-to-card-btn"
+                data-name="Coca_lata"
+                data-pricie="6.00"
+              >
+                <i class="fa fa-card-plus text-sm text-white">🛒</i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+      id="cart-modal"
+    >
+      <div
+        class="bg-white p-5 rounded-md max-h-90 min-w-[90%] md:min-w-[600px] laal"
+      >
+        <h2 class="text-center font-bold text-3xl">Meu Carrinho</h2>
+
+        <div
+          id="card-items"
+          class="flex justify-between mb-2 flex-col overscroll-x-none"
+        ></div>
+
+        <p class="font-bold">Total: <span id="card-total">0.00</span></p>
+        <p class="font-bold mt-4">Endereço de entrega:</p>
+        <input
+          id="address-input"
+          type="text"
+          placeholder="Digite seu endereço completo..."
+          class="w-full border-2 p-1 rounded-md my 1"
+        />
+
+        <p id="address-warn" class="text-red-800 hidden">
+          Digite seu endereço completo!
+        </p>
+
+        <div class="flex items-center justify-between mt-4 w-full">
+          <button id="close-modal-btn" class="bg-red-400 rounded-md px-4 py-1">
+            fechar
+          </button>
+          <button
+            id="checkout-btn"
+            class="bg-green-700 text-white px-4 rounded-md py-1"
+          >
+            finalizar pedido
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="border-2 border-blue-950 w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center"
+    >
+      <button
+        class="w-full flex items-center justify-center gap-2 text-white font-bold"
+        id="card-btn"
+      >
+        (<span id="cart-caunt">0</span>) veja meu carrinho
+        <i class="fa fa-card-plus text-sm text-white">🛒</i>
+      </button>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

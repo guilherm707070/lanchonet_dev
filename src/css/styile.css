@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --cor-01:#FDD9A0;
+    --cor-02:#FBB33D;
+    --cor-03:#883C41;
+    --cor-04:#512A2F;
+    --cor-05:#000000;
+}
+@media (max-width:768px) {
+   
+    .laal{
+       
+        max-height: 300px;
+        overflow-y:scroll ;
+    }
+    
+}
+header{
+    background-image: url("/src/img/bg02.png");
+}
+body{
+    background-color: var(--cor-01);
+    
+}
+.laal{
+    max-height: 600px;
+    overflow-y:auto ;
+}
